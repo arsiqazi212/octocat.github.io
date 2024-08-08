@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <section>
+
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-a"></i>
+                <div class="logo-text">ARSALAN QAZI </div>
+            </div>
+            <nav>
+                <div class="togglebtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    
+                </div>
+                <ul class="navlinks">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">RESUMA</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+         <div class="hero-pic">
+            <img src="logo 1.jpg" alt="profile pic">
+         </div>
+         <div class="hero-text">
+            <h5 class="input"> Hi I'm <span>Full Stack Developer</span></h5>
+            <h3>ARSALAN QAZI</h3>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque alias laudantium sed molestiae deserunt! Neque, quo officiis eius laudantium dolor mi
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur expedita iure accusamus dolorum aperiam ipsam non, impeditametvoluptatibus nesciunt dicta molestiae nulla quae.
+            </P>
+            <div class="btn-group">
+                <a href="#" class="btn active"> Download CV</a>
+                <a href="#" class="btn">Contact</a>
+            </div>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-square-upwork"></i>
+                <a href="#"><i class="i.fa-brands fa-dribble"></i></a>
+            </div>
+         </div>
+        </div>
+
+      </div>
+    </div>
+<script
+ src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js">
+</script>
+     <script>
+        // creating show hide navbar on clicks
+        var togglebtn=document.querySelectorAll(".togglebtn");
+        var nav=document.querySelectorAll(".navlinks");
+        var links=document.querySelectorAll(".navlinks li ");
+
+//         const collapseElementList = document.querySelectorAll('.togglebtn')
+// const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+
+        togglebtn.addEventListener( ("click"),function(){
+            this.classlist.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new typed(".input",{
+        String:["full Stack Developer","UX Designer","Web Developer"],
+        typedSpeed:70,
+        backSpeed:55,
+        loop:true,
+        })
+
+     </script> 
+</section>
+
+
+</body>
+</html>
